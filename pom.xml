@@ -44,12 +44,12 @@
 			<scope>test</scope>
 		</dependency>
 
-   		<dependency>
- 			<groupId>TODO</groupId>
- 			<artifactId>TODO</artifactId>
- 			<scope>TODO</scope>
- 			<optional>TODO</optional>
- 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -57,6 +57,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0</version>
 			</plugin>
 		</plugins>
 	</build>
